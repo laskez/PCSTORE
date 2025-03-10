@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap');
+
+*{
+    font-family: "Tektur", serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    
+}
+
+body{
+    background-color: #181F1C;  /* ФОН */
+    
+}
+
+header{
+    background-color: #274029;  /* Цвет Бара */
+    
+}
+
+
+                                            /*ВЕРХНИЙ БАР*/
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* Верхний БАР */
+    padding: 1.2rem;
+    top: 0; left: 0;
+    position: sticky; /*Фиксация бара стр 29-30*/
+    z-index: 100;
+}
+
+.header-home-text{
+    font-size: 35px; /* gap text Домашняя страница */
+    font-weight: bold;
+    position: absolute;
+    right: 750px;
+    color: #60712F;
+}
+
+
+                                            /*ИНФОРМАЦИОННЫЙ БЛОК О КОМПАНИИ*/
+
+
+.middle-text h1 {
+    color: #60712F;  /* PC STORE */
+    margin: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.middle-text h2 {
+    color: #9EA93F;  /* Partner */
+    margin: 25px;
+    font-size: 35px;
+    font-style:italic;
+    animation: fly 3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.middle-text p{
+    color: #9EA93F; /* Основной текст */
+    margin: 25px;
+    animation: fly 3.8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+middle .middle-logo{
+    position: absolute;
+    right: 0px;           /* Иконка Мат платы */
+    top: 140px;
+}
+
+
+                                            /*БАР ПОСЛЕ ИНФОРМАЦИОННОГО БЛОКА О КОМПАНИИ*/
+
+nav-between-middle-main a {
+    color: #9EA93F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    margin: 0 50px;
+    border-style:solid; border-color: #60712F; 
+    border-radius: 17.5px;
+    border-top: 20px;
+    padding: 6.4px;
+    transition: .5s;
+}
+
+nav-between-middle-main a:hover {
+    color: whitesmoke;
+    transform: scale(1.2, 1.2);
+}
+
+nav-between-middle-main {
+    background-color: #274029;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    position: relative;         /* Промежуток между блоками */
+    top: 120px;
+}
+
+
+                                            /*ОСНОВНОЙ БЛОК С ЛИДЕРАМИ ПРОДАЖ И ПК*/
+
+main{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+
+}
+
+
+.title-main{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #60712F;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.text-of-comp{
+    color: #315c2b;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.lst-items{
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.lst-ob{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-comp{
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-comp:hover{
+    transform: scale(1.15);
+}
+
+.lst-button{
+    color: black;
+    background-color: #60712F;
+    padding: 12px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size: 20px;
+    transition: .2s;
+    font-weight: bold;
+    border-style: solid; border-color:#60712F;
+}
+
+.lst-button:hover{
+    color: whitesmoke;
+    background: none;
+}
+.border-d{
+    border: 2.4px solid black;
+    width: 40%;
+    padding: 15px;
+}
+
+
+                                            /*НИЖНИЙ БЛОК С КОНТАКТАМИ И АДРЕСОМ КОМПАНИИ*/
+
+footer {
+    background-color: #274029; /* Цвет футера */
+    padding-top: 20px; /* Отступы вокруг содержимого */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 5%; /*Отсуп сверху от блоков ПК*/
+    padding-bottom: 1.5%;
+}
+
+.footer-gap {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.yandex-map {
+    margin-right: 20px; /* Отступ справа от карты */
+}
+
+.adress-container {
+    padding-right: 15%; /*Отступ контактной информации от карты*/
+    padding-top: 3.5%; /*Отступ контактной информации от блоков ПК*/
+}
+
+.adress-container h2 {  /*СТРОЧКА "НАШ АДРЕС"*/
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.contact-info h3 {  /*СТРОЧКА "КОНТАКТЫ"*/
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+address p {  /*Параграф АДРЕСА*/
+    margin: 2px 0;
+    color: rgb(195, 190, 190);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {         /*Блок КОНТАКТЫ*/
+    margin-top: 25px; 
+}
+
+.phone-numbers {  /*БЛОК КОНТАКТЫ - НОМЕРА ТЕЛЕФОНОВ*/
+    list-style-type: none; /*убирает отметки строчки*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.phone-numbers li {
+    color: rgb(195, 190, 190);; /* Цвет для номеров телефонов */
+    margin: 5px 0; /* Отступы снизу для телефонов */
+}
+
+                                            /*САМЫЙ НИЖНИЙ БЛОК ДЛЯ ОФИЦИАЛЬНЫХ ОТМЕТОК, ЧТО САЙТ НЕ ПОДДЕЛКА*/
+
+.end-gap {
+    background-color: #315C2B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.end-gap p {
+    color: whitesmoke;
+    font-weight: bold;
+    padding-left: 450px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.i-container {
+    display: flex;
+    margin-left: 24rem;
+    font-size: 25px;
+}
+
+.icon-telegram, .icon-instagram, .icon-youtube, .icon-github {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 15%;
+    background-color: #274029;
+    width: 50px;
+    height: 50px;
+    margin: 0 7.5px;
+}
+
+.icon-telegram i {
+    color: whitesmoke;
+    transition: .1,25s;
+}
+
+.icon-instagram i {
+    color: whitesmoke;
+    transition: .1,25s;
+}
+
+.icon-youtube i {
+    color: whitesmoke;
+    transition: .1,25s;
+}
+
+.icon-github i {
+    color: whitesmoke;
+    transition: .1,25s;
+}
+
+.icon-telegram i:hover {
+    transform: scale(1.5);
+    color: cyan;
+}
+
+.icon-instagram i:hover {
+    transform: scale(1.5);
+    color: #E56969;
+}
+
+.icon-youtube i:hover {
+    transform: scale(1.5);
+    color: red;
+}
+
+.icon-github i:hover {
+    transform: scale(1.5);
+    color: gray;
+}
+
+
+                                            /*АНИМАЦИИ*/
+@keyframes fly {
+    from {
+        opacity: 0;
+        transform: scale(0.5);      
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+                                            /*АДАПТАЦИЯ*/
+
+@media (max-width: 768px) { 
+    .owner-text { 
+        font-size: 1.75rem;
+    }
+    
+    .icons i{
+        font-size: 2rem;
+    }
+
+    .middle .logo-middle {
+        max-width: 90%;
+        right: auto;
+        left: auto;
+        position: relative;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .lst-ob {
+        width: 100%;
+    }
+
+    .border-d {
+        width: 80%;
+    }
+
+    .title-main {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .owner-text { 
+        font-size: 1.5rem;
+    }
+    
+    .icons i{
+        font-size: 2rem;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text h2 {
+        font-size: 1.25rem;
+    }
+
+    .border-d {
+        width: 90%;
+    }
+}
